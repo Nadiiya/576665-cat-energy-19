@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nadiia Derevianchenko](https://up.htmlacademy.ru/adaptive/19/user/576665).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шрамко](https://htmlacademy.ru/profile/id852139).
 
 ---
 
