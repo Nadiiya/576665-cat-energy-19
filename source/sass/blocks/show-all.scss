@@ -1,0 +1,23 @@
+.show-all {
+  padding: 83px 20px 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgb(239, 239, 239);
+
+  &__title {
+    font-size: 16px;
+    color: $title-color;
+    text-transform: uppercase;
+    margin: 0 0 11px;
+  }
+
+  &__note {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 22px;
+  }
+
+  &__link {
+    color: $text-color;
+    background-color: $secondary-bg;
+  }
+}

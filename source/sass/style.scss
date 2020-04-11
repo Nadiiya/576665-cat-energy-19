@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 // Variables and mixins
-@import
-  "variables",
-  "mixins";
+@import "variables", "mixins";
 
 //fonts
 @font-face {
@@ -21,11 +19,10 @@
 }
 
 //global
-@import
-  "global";
+@import "global";
 
 //blocks
-@import
+@import "blocks/button",
   "blocks/page-header",
   "blocks/site-list",
   "blocks/main-banner",
@@ -35,5 +32,9 @@
   "blocks/page-footer",
   "blocks/copyright",
   "blocks/catalog",
+  "blocks/food-list",
+  "blocks/food-info",
+  "blocks/show-all",
   "blocks/form-page",
-  "blocks/button";
+  "blocks/footer-address",
+  "blocks/social-list";

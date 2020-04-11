@@ -1,9 +1,9 @@
 .catalog {
-  padding-top: 32px;
-
   &__title {
     font-size: 36px;
     color: $title-color;
     margin: 0;
+    padding: 30px 22px 36px 22px;
+    border-bottom: 1px solid rgb(239, 239, 239);
   }
 }
