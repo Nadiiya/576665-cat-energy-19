@@ -1,0 +1,9 @@
+.catalog {
+  padding-top: 32px;
+
+  &__title {
+    font-size: 36px;
+    color: $title-color;
+    margin: 0;
+  }
+}

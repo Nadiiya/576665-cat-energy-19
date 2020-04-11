@@ -1,0 +1,12 @@
+@mixin section-title {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  color: $title-color;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
