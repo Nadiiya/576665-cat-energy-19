@@ -1,0 +1,13 @@
+.form-page {
+  padding-top: 30px;
+
+  &__title {
+    font-size: 36px;
+    color: $title-color;
+    margin: 0 0 35px 0;
+  }
+
+  &__invite {
+    text-transform: uppercase;
+  }
+}

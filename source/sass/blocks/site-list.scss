@@ -1,0 +1,10 @@
+.site-list {
+  @include list-reset;
+
+  &__link {
+    font-size: 20px;
+    color: $title-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

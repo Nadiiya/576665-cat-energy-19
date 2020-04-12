@@ -1,0 +1,10 @@
+.tutorial {
+  &__title {
+    @include section-title;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+}
