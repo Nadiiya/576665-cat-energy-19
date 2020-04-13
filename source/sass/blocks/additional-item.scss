@@ -1,0 +1,18 @@
+.additional-item {
+  @include catalog-border;
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.additional-item__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $label-color;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.additional-item__prise-unit {
+  margin: 0;
+  margin-bottom: 14px;
+}

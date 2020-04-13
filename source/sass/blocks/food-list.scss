@@ -3,7 +3,7 @@
 }
 
 .food-list__item {
-  border-bottom: 1px solid rgb(239, 239, 239);
+  @include catalog-border;
   padding: 25px 20px;
 }
 
