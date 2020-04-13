@@ -4,12 +4,12 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   color: rgb(255, 255, 255);
   margin-bottom: 22px;
+}
 
-  &__title {
-    font-size: 36px;
-  }
+.main-banner__title {
+  font-size: 36px;
+}
 
-  &__description {
-    text-transform: uppercase;
-  }
+.main-banner__description {
+  text-transform: uppercase;
 }

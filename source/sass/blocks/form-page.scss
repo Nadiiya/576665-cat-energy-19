@@ -1,13 +1,13 @@
 .form-page {
   padding-top: 30px;
+}
 
-  &__title {
-    font-size: 36px;
-    color: $title-color;
-    margin: 0 0 35px 0;
-  }
+.form-page__title {
+  font-size: 36px;
+  color: $title-color;
+  margin: 0 0 35px 0;
+}
 
-  &__invite {
-    text-transform: uppercase;
-  }
+.form-page__invite {
+  text-transform: uppercase;
 }
