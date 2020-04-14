@@ -12,6 +12,7 @@
 }
 
 .food-list__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $title-color;
@@ -21,4 +22,8 @@
 .food-list__info {
   font-size: 12px;
   line-height: 16px;
+}
+
+.food-list__order {
+  font-size: 16px;
 }

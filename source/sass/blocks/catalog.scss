@@ -1,5 +1,5 @@
 .catalog__title {
-  font-size: 36px;
+  @include section-title;
   color: $title-color;
   margin: 0;
   padding: 30px 22px 36px 22px;

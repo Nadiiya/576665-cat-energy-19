@@ -1,3 +1,8 @@
+.request-form {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+
 .request-form__field-group {
   border: none;
   padding: 0;
@@ -20,6 +25,7 @@
 }
 
 .request-form__input {
+  font-family: "Oswald", "Arial", sans-serif;
   border: 1px solid $input-border;
   font-size: 16px;
   color: $input-color;
@@ -29,4 +35,8 @@
 .request-form__submit {
   border: none;
   width: 100%;
+}
+
+.request-form__footnote {
+  font-family: "Arial", sans-serif;
 }

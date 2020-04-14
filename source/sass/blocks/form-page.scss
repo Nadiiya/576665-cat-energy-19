@@ -3,12 +3,12 @@
 }
 
 .form-page__title {
-  font-size: 36px;
-  color: $title-color;
+  @include section-title;
   margin: 0 0 35px 0;
 }
 
 .form-page__invite {
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
