@@ -1,0 +1,42 @@
+.request-form {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+
+.request-form__field-group {
+  border: none;
+  padding: 0;
+}
+
+.request-form__list {
+  @include list-reset;
+}
+
+.request-form__legend {
+  font-size: 24px;
+  color: $title-color;
+}
+
+.request-form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $label-color;
+  text-transform: uppercase;
+}
+
+.request-form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: 1px solid $input-border;
+  font-size: 16px;
+  color: $input-color;
+  text-transform: uppercase;
+}
+
+.request-form__submit {
+  border: none;
+  width: 100%;
+}
+
+.request-form__footnote {
+  font-family: "Arial", sans-serif;
+}

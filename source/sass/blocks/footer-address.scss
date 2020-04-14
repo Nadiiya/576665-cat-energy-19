@@ -1,15 +1,19 @@
 .footer-address {
-  &__title {
-    font-size: 16px;
-    line-height: 20px;
-    color: $title-color;
-    text-transform: uppercase;
-    margin: 0;
-  }
+  padding-top: 31px;
+  padding-bottom: 28px;
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-  }
+.footer-address__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-address__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
 }

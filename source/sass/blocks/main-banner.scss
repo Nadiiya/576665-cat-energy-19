@@ -1,15 +1,17 @@
 .main-banner {
   padding: 20px;
-  background-color: green; //temporary
+  background-color: green;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   color: rgb(255, 255, 255);
   margin-bottom: 22px;
+}
 
-  &__title {
-    font-size: 36px;
-  }
+.main-banner__title {
+  @include section-title;
+  color: #ffffff;
+}
 
-  &__description {
-    text-transform: uppercase;
-  }
+.main-banner__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
 }

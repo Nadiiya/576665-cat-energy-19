@@ -1,13 +1,15 @@
 .form-page {
   padding-top: 30px;
+}
 
-  &__title {
-    font-size: 36px;
-    color: $title-color;
-    margin: 0 0 35px 0;
-  }
+.form-page__title {
+  @include section-title;
+  margin: 0 0 35px 0;
+}
 
-  &__invite {
-    text-transform: uppercase;
-  }
+.form-page__invite {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
 }

@@ -1,0 +1,15 @@
+.additional-order {
+  padding-bottom: 34px;
+}
+
+.additional-order__legend {
+  margin-bottom: 32px;
+}
+
+.additional-order__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

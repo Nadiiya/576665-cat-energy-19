@@ -1,25 +1,29 @@
 .food-list {
   @include list-reset;
+}
 
-  &__item {
-    border-bottom: 1px solid rgb(239, 239, 239);
-    padding: 25px 20px;
-  }
+.food-list__item {
+  @include catalog-border;
+  padding: 25px 20px;
+}
 
+.food-list__link {
+  text-decoration: none;
+}
 
-  &__link {
-    text-decoration: none;
-  }
+.food-list__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color;
+  text-transform: uppercase;
+}
 
-  &__title {
-    font-size: 16px;
-    line-height: 20px;
-    color: $title-color;
-    text-transform: uppercase;
-  }
+.food-list__info {
+  font-size: 12px;
+  line-height: 16px;
+}
 
-  &__info {
-    font-size: 12px;
-    line-height: 16px;
-  }
+.food-list__order {
+  font-size: 16px;
 }

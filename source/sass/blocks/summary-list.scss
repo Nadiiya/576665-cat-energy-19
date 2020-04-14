@@ -1,0 +1,15 @@
+.summary-list {
+  @include list-reset;
+}
+
+.summary-list__value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  color: $title-color;
+  margin: 0;
+}
+
+.summary-list__option {
+  font-size: 12px;
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+.testimonial {
+  background-color: $secondary-bg;
+  padding-top: 33px;
+  padding-bottom: 39px;
+}
+
+.testimonial__title {
+  @include section-title;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.testimonial__result {
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 27px;
+}
