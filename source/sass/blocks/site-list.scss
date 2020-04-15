@@ -1,5 +1,16 @@
 .site-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  @include mobile-padding;
+  @include catalog-border;
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-list__link {
@@ -9,4 +20,16 @@
   color: $title-color;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    border: none;
+    padding: 0;
+  }
 }

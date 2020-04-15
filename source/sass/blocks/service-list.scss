@@ -1,11 +1,8 @@
-.service-list {
-  @include list-reset;
-}
-
 .service-list__item {
   background-color: $secondary-bg;
   padding: 22px 36px 22px 21px;
   margin-bottom: 20px;
+  min-width: 280px;
 }
 
 .service-list__title {
@@ -32,4 +29,37 @@
   text-transform: uppercase;
   color: $title-color;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .service-list__item {
+    max-width: 708px;
+    padding: 80px 285px 60px 52px;
+  }
+
+  .service-list__description {
+    border-bottom: none;
+  }
+
+  .service-list__title {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 56px 62px 52px;
+    margin-bottom: 0;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .service-list__title {
+    padding-left: 216px;
+  }
 }

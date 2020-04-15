@@ -1,0 +1,28 @@
+.service {
+  @include mobile-padding;
+  margin-bottom: 32px;
+}
+
+.service__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .service {
+    @include tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service {
+    @include desktop-padding;
+  }
+
+  .service__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

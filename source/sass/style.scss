@@ -3,14 +3,19 @@
 // Variables and mixins
 @import "variables", "mixins";
 
+//fonts
+@import "fonts";
+
 //global
 @import "global";
 
 //blocks
 @import "blocks/button",
   "blocks/page-header",
+  "blocks/main-nav",
   "blocks/site-list",
   "blocks/main-banner",
+  "blocks/service",
   "blocks/service-list",
   "blocks/tutorial",
   "blocks/testimonial",
@@ -33,5 +38,6 @@
   "blocks/owner-date",
   "blocks/form-comment",
   "blocks/additional-order",
+  "blocks/footer-contacts",
   "blocks/footer-address",
   "blocks/social-list";

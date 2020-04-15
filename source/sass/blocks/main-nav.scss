@@ -1,0 +1,24 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__burger {
+  position: absolute;
+  top: -23px;
+  right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__burger {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+}

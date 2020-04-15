@@ -1,3 +1,49 @@
 .page-header {
-  min-hight: 65px;
+  padding-top: 11px;
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  @include mobile-padding;
+  @include catalog-border;
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include tablet-padding;
+    padding-top: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+    margin-right: 96px;
+    border: none;
+  }
+
+  .page-header__nav {
+    min-width: 438px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-padding;
+    padding-top: 53px;
+  }
+
+  .page-header__logo {
+    width: 50%;
+  }
+
+  .page-header__nav {
+    width: 50%;
+  }
 }
