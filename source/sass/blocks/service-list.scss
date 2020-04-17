@@ -1,8 +1,16 @@
+.service-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .service-list__item {
   background-color: $secondary-bg;
   padding: 22px 36px 22px 21px;
   margin-bottom: 20px;
-  min-width: 280px;
+  width: 100%;
+  min-height: 266px;
 }
 
 .service-list__title {
@@ -47,16 +55,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .service-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .service-list__item {
+    width: calc(50% - 40px);
     display: flex;
     flex-direction: column;
     padding: 80px 56px 62px 52px;
     margin-bottom: 0;
-    margin-right: 10px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   .service-list__title {

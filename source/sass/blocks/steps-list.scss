@@ -24,16 +24,10 @@
   }
 
   .steps-list__item {
-    width: 237px;
+    width: calc(50% - 83px);
     min-height: 237px;
     padding-top: 117px;
     padding-left: 0;
     margin-bottom: 0;
-  }
-}
-
-@media (min-height: $desktop-width) {
-  .steps-list {
-    justify-content: start;
   }
 }

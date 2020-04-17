@@ -21,6 +21,9 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    @include desktop-padding;
+    padding: 0;
+    width: 100%;
+
+    @include max-width;
   }
 }

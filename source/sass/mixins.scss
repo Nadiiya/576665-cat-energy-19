@@ -27,3 +27,9 @@
 @mixin desktop-padding {
   padding: 0 40px;
 }
+
+@mixin max-width {
+  padding: 0 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}

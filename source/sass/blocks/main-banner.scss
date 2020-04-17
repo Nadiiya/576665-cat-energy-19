@@ -75,3 +75,9 @@
     right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-banner {
+    @include max-width;
+  }
+}
