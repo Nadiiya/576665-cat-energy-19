@@ -1,10 +1,17 @@
 .food-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .food-list__item {
   @include catalog-border;
-  padding: 25px 20px;
+  @include mobile-padding;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 280px;
+  min-height: 210px;
 }
 
 .food-list__link {
@@ -26,4 +33,30 @@
 
 .food-list__order {
   font-size: 16px;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .food-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .food-list__item {
+    width: calc(50% - 30px);
+    background-color: $secondary-bg;
+    margin-bottom: 140px;
+    min-height: 431px;
+  }
+
+  .food-list__order {
+    width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-list__item {
+    width: calc(25% - 40px);
+  }
 }

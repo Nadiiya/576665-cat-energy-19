@@ -1,7 +1,30 @@
+.catalog {
+  @include mobile-padding;
+}
+
 .catalog__title {
   @include section-title;
   color: $title-color;
   margin: 0;
-  padding: 30px 22px 36px 22px;
+  min-height: 103px;
   border-bottom: 1px solid rgb(239, 239, 239);
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    @include tablet-padding;
+  }
+
+  .catalog__title {
+    margin-bottom: 156px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    @include block-centered;
+  }
 }

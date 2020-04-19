@@ -1,3 +1,51 @@
 .page-header {
-  min-hight: 65px;
+  @include catalog-border;
+  padding-top: 11px;
+  min-height: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  @include mobile-padding;
+
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include tablet-padding;
+    padding-top: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+    margin-right: 96px;
+    border: none;
+    padding: 0;
+  }
+
+  .page-header__nav {
+    min-width: 438px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include block-centered;
+  }
+
+  .page-header__logo {
+    width: 50%;
+    margin: 0;
+  }
+
+  .page-header__nav {
+    width: 50%;
+  }
 }

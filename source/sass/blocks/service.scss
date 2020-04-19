@@ -1,21 +1,16 @@
-.tutorial {
+.service {
   @include mobile-padding;
-  margin-bottom: 42px;
-}
-
-.tutorial__title {
-  @include section-title;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
-  .tutorial {
+  .service {
     @include tablet-padding;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .tutorial {
+  .service {
     @include block-centered;
   }
 }

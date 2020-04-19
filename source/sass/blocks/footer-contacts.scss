@@ -1,0 +1,20 @@
+.footer-contacts {
+  position: relative;
+}
+
+.footer-contacts__address {
+  @include mobile-padding;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop-width) {
+  .footer-contacts__address {
+    width: 570px;
+    min-height: 210px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

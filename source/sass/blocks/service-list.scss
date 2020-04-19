@@ -1,11 +1,16 @@
 .service-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-list__item {
   background-color: $secondary-bg;
   padding: 22px 36px 22px 21px;
   margin-bottom: 20px;
+  width: 100%;
+  min-height: 266px;
 }
 
 .service-list__title {
@@ -32,4 +37,42 @@
   text-transform: uppercase;
   color: $title-color;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .service-list__item {
+    max-width: 708px;
+    padding-top: 80px;
+    padding-right: 285px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+  }
+
+  .service-list__description {
+    border-bottom: none;
+  }
+
+  .service-list__title {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service-list__item {
+    width: calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 56px 62px 52px;
+    margin-bottom: 0;
+  }
+
+  .service-list__title {
+    padding-left: 216px;
+  }
 }
