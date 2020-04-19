@@ -42,7 +42,10 @@
 @media (min-width: $tablet-width) {
   .service-list__item {
     max-width: 708px;
-    padding: 80px 285px 60px 52px;
+    padding-top: 80px;
+    padding-right: 285px;
+    padding-bottom: 60px;
+    padding-left: 52px;
   }
 
   .service-list__description {

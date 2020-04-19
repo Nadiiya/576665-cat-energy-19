@@ -1,5 +1,5 @@
-let navMain = document.querySelector('.main-nav');
-let navBurger = document.querySelector('.main-nav__burger');
+const navMain = document.querySelector('.main-nav');
+const navBurger = document.querySelector('.main-nav__burger');
 
 navMain.classList.remove('main-nav--nojs');
 

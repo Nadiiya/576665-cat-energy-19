@@ -16,6 +16,6 @@
 
 @media (min-width: $desktop-width) {
   .tutorial {
-    @include max-width;
+    @include block-centered;
   }
 }

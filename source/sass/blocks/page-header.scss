@@ -37,7 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include max-width;
+    @include block-centered;
   }
 
   .page-header__logo {

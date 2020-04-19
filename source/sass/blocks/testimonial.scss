@@ -18,6 +18,6 @@
 
 @media (min-width: $desktop-width) {
   .testimonial__wrapper {
-    @include max-width;
+    @include block-centered;
   }
 }

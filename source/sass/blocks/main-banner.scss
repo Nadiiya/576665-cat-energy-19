@@ -78,6 +78,6 @@
 
 @media (min-width: $desktop-width) {
   .main-banner {
-    @include max-width;
+    @include block-centered;
   }
 }

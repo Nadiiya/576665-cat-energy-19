@@ -25,6 +25,6 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    @include max-width;
+    @include block-centered;
   }
 }
