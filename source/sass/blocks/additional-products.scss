@@ -1,5 +1,9 @@
+.additional-products {
+  display: flex;
+  flex-direction: column;
+}
+
 .additional-products__title {
-  @include catalog-border;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   color: $title-color;
@@ -13,9 +17,29 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 280px;
+  width: 100%;
   min-height: 289px;
   color: #ffffff;
   text-align: center;
   padding-top: 130px;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-products__title {
+    width: 100%;
+  }
+
+  .additional-products__list {
+    width: 766px;
+  }
+
+  .additional-products__order-all {
+    width: 245px;
+  }
 }
