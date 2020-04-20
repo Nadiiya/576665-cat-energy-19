@@ -13,3 +13,22 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .additional-order__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-order__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-order__item {
+    width: 25%;
+  }
+}

@@ -1,5 +1,8 @@
 .request-form {
   font-family: "Oswald", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
 }
 
 .request-form__field-group {
@@ -21,6 +24,7 @@
   line-height: 18px;
   color: $label-color;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .request-form__input {
@@ -34,8 +38,43 @@
 .request-form__submit {
   border: none;
   width: 100%;
+  margin-bottom: 23px;
 }
 
 .request-form__footnote {
   font-family: "Arial", sans-serif;
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .request-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 72px;
+  }
+
+  .request-form__field-wrapper {
+    width: 100%;
+  }
+
+  .request-form__submit {
+    width: calc(50% - 30px);
+    max-width: 283px;
+    margin-bottom: 0;
+  }
+
+  .request-form__footnote {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request-form {
+    padding-bottom: 72px;
+  }
+
+  .request-form__submit {
+    max-width: 568px;
+  }
 }
