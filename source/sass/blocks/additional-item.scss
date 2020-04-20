@@ -2,6 +2,8 @@
   @include catalog-border;
   padding-top: 14px;
   padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
 }
 
 .additional-item__title {
@@ -16,4 +18,34 @@
 .additional-item__prise-unit {
   margin: 0;
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additional-item__title,
+  .additional-item__price-unit {
+    width: 50%;
+  }
+
+  .additional-item__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item {
+    flex-wrap: nowrap;
+  }
+
+  .additional-item__price-unit {
+    width: 30%;
+  }
+
+  .additional-item__order {
+    width: 245px;
+  }
 }

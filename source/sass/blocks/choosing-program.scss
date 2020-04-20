@@ -11,3 +11,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .choosing-program {
+    width: 50%;
+  }
+}

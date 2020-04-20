@@ -1,6 +1,7 @@
 .costs {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  display: flex;
 }
 
 .costs__option {
@@ -9,4 +10,16 @@
 
 .costs__value {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .costs {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .costs {
+    flex-direction: row;
+  }
 }

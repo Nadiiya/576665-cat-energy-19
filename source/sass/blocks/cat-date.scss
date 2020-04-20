@@ -6,3 +6,9 @@
   height: 45px;
   margin-bottom: 14px;
 }
+
+@media (min-width: $desktop-width) {
+  .cat-date {
+    width: 50%;
+  }
+}
