@@ -1,7 +1,5 @@
 .page-footer {
   background-color: $secondary-bg;
-  display: flex;
-  flex-direction: column;
 }
 
 .page-footer__wrapper {
@@ -9,6 +7,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page-footer__logo {
+  border-bottom: 1px solid rgb(218,218,218);
+  min-height: 94px;
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__social {
+  min-height: 62px;
+  border-bottom: 1px solid rgb(218,218,218);
+}
+
+.page-footer__copyright {
+  min-height: 78px;
 }
 
 @media (min-width: $tablet-width) {

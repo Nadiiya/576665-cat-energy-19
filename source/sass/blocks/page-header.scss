@@ -9,7 +9,7 @@
 .page-header__logo {
   @include mobile-padding;
   padding-right: 50px;
-  min-height: 55px;;
+  min-height: 55px;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include block-centered;
-    padding-top: 37px;
+    padding-top: 25px;
     min-height: 142px;
 
     &--background {

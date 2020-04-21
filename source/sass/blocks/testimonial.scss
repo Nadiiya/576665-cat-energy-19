@@ -34,6 +34,7 @@
   .testimonial {
     @include tablet-padding;
     background-color: $primary-bg;
+    height: 1040px;
   }
 
   .testimonial__description {

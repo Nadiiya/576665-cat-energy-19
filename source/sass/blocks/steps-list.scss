@@ -27,10 +27,23 @@
   }
 
   .steps-list__item {
-    width: calc(50% - 83px);
-    min-height: 237px;
-    padding-top: 117px;
+    font-size: 16px;
+    line-height: 24px;
+    width: calc(50% - 30px);
+    min-height: 320px;
+    padding-top: 138px;
     padding-left: 0;
-    margin-bottom: 0;
+    padding-right: 60px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps-list__item {
+    width: calc(25% - 60px);
+    padding-top: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }

@@ -11,10 +11,15 @@
   .tutorial {
     @include tablet-padding;
   }
+
+  .tutorial__title {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tutorial {
     @include block-centered;
+    padding-top: 15px;
   }
 }

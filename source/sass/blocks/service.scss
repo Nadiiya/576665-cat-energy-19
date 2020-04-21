@@ -11,5 +11,7 @@
 @media (min-width: $desktop-width) {
   .service {
     @include block-centered;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 }

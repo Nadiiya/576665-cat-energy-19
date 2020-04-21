@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
   min-height: 305px;
-  padding: 25px 20px 135px 20px;
+  padding: 25px 20px 125px 20px;
   text-align: center;
   width: 100%;
 }
@@ -79,6 +79,8 @@
   .main-banner__to-form {
     min-width: 245px;
     z-index: 10;
+    position: static;
+    transform: none;
   }
 
   .main-banner__img {
@@ -107,7 +109,7 @@
   }
 
   .main-banner__description {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .main-banner__to-form {
