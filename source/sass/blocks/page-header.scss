@@ -8,36 +8,55 @@
 
 .page-header__logo {
   @include mobile-padding;
-
-  width: 191px;
-  height: 39px;
+  padding-right: 50px;
+  min-height: 55px;;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     @include tablet-padding;
-    padding-top: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 115px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none;
   }
 
   .page-header__logo {
     width: 174px;
     height: 59px;
-    margin-right: 96px;
+    margin: 0;
     border: none;
     padding: 0;
   }
 
   .page-header__nav {
-    min-width: 438px;
+    width: calc(100% - 270px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     @include block-centered;
+    padding-top: 37px;
+    min-height: 142px;
+
+    &--background {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 50%;
+        height: 696px;
+        background-color: rgb(34, 139, 34);
+        background-image: url("../../img/index-background-desktop@1x.jpg");
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
   }
 
   .page-header__logo {
@@ -47,5 +66,11 @@
 
   .page-header__nav {
     width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header::before {
+    right: -70px;
   }
 }

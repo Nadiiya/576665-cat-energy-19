@@ -3,9 +3,16 @@
 }
 
 .footer-contacts__address {
-  @include mobile-padding;
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-contacts__map {
+  height: 400px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-position: center;
+
 }
 
 @media (min-width: $desktop-width) {

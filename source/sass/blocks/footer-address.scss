@@ -1,6 +1,10 @@
 .footer-address {
-  padding-top: 31px;
-  padding-bottom: 28px;
+  min-height: 114px;
+  background-color: $primary-bg;
+  @include mobile-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-address__title {
@@ -10,10 +14,12 @@
   color: $title-color;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
 }
 
 .footer-address__text {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  width: 153px;
 }

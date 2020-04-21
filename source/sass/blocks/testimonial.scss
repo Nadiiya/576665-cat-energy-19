@@ -1,8 +1,10 @@
 .testimonial {
   background-color: $secondary-bg;
+  height: 705px;
+  overflow: hidden;
 
   @include mobile-padding;
-  padding-top: 33px;
+  padding-top: 20px;
   padding-bottom: 39px;
 }
 

@@ -1,6 +1,5 @@
 .service {
   @include mobile-padding;
-  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
