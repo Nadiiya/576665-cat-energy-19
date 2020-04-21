@@ -3,3 +3,9 @@
   color: rgb(68, 68, 68);
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-right: 23px;
+  }
+}
