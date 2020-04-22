@@ -1,4 +1,23 @@
 .food-info {
+  color: rgb(68, 68, 68);
   table-layout: fixed;
-  min-width: 141px;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.food-info__value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .food-info {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .food-info__value,
+  .food-info__option {
+    border-bottom: 1px solid rgb(206, 206, 206);
+  }
 }

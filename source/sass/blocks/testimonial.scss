@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .testimonial {
+    height: 581px;
+  }
+
   .testimonial__wrapper {
     @include block-centered;
     display: flex;
