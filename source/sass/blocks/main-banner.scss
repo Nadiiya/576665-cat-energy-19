@@ -38,7 +38,7 @@
   margin-top: -137px;
 }
 
-.main-banner__to-form {
+.main-banner__confirm {
   min-width: 280px;
   position: absolute;
   bottom: 0%;
@@ -76,7 +76,7 @@
     margin-bottom: 45px;
   }
 
-  .main-banner__to-form {
+  .main-banner__confirm {
     min-width: 245px;
     z-index: 10;
     position: static;
@@ -112,8 +112,7 @@
     margin-bottom: 45px;
   }
 
-  .main-banner__to-form {
-    position: static;
+  .main-banner__confirm {
     display: inline-block;
   }
 
