@@ -1,10 +1,10 @@
 .main-banner {
   position: relative;
-  margin-bottom: 22px;
   min-height: 502px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 22px;
 }
 
 .main-banner__wrapper {
@@ -15,15 +15,16 @@
   background-size: cover;
   background-position: center;
   min-height: 305px;
-  padding: 20px 20px 135px 20px;
+  padding: 25px 20px 125px 20px;
   text-align: center;
   width: 100%;
 }
 
 .main-banner__title {
   @include section-title;
+  line-height: 1;
   color: #ffffff;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .main-banner__description {
@@ -37,15 +38,20 @@
   margin-top: -137px;
 }
 
-.main-banner__to-form {
+.main-banner__confirm {
   min-width: 280px;
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 @media (min-width: $tablet-width) {
   .main-banner {
     @include tablet-padding;
     align-items: start;
-    padding-left: 110px;
+    padding-left: 120px;
+    min-height: 835px;
   }
 
   .main-banner__wrapper {
@@ -54,30 +60,63 @@
     padding-bottom: 48px;
     padding-left: 0;
     min-height: 130px;
+    width: 450px;
+    z-index: 10;
   }
 
   .main-banner__title {
     color: $title-color;
+    font-size: 60px;
+    margin-bottom: 35px;
   }
 
   .main-banner__description {
     color: $title-color;
+    font-size: 20px;
+    margin-bottom: 45px;
   }
 
-  .main-banner__to-form {
+  .main-banner__confirm {
     min-width: 245px;
     z-index: 10;
+    position: static;
+    transform: none;
   }
 
   .main-banner__img {
+    display: block;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 250px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-banner {
     @include block-centered;
+    min-height: 555px;
+  }
+
+  .main-banner__wrapper {
+    width: 50%;
+    padding-left: 80px;
+    padding-top: 80px;
+  }
+
+  .main-banner__title {
+    font-size: 60px;
+    margin-bottom: 36px;
+  }
+
+  .main-banner__description {
+    margin-bottom: 45px;
+  }
+
+  .main-banner__confirm {
+    display: inline-block;
+  }
+
+  .main-banner__img {
+    right: 33%;
   }
 }

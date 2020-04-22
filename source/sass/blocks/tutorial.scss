@@ -1,21 +1,25 @@
 .tutorial {
   @include mobile-padding;
-  margin-bottom: 42px;
 }
 
 .tutorial__title {
   @include section-title;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .tutorial {
     @include tablet-padding;
   }
+
+  .tutorial__title {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tutorial {
     @include block-centered;
+    padding-top: 15px;
   }
 }

@@ -11,11 +11,18 @@ html {
 body {
   min-width: 320px;
   padding: 0;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   color: rgb(68, 68, 68);
   font-style: normal;
   background-color: $primary-bg;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),

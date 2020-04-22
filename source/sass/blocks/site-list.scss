@@ -7,10 +7,10 @@
 .site-list__item {
   @include mobile-padding;
   @include catalog-border;
+  padding: 10px;
+  padding-top: 18px;
+  text-align: center;
   min-height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .site-list__link {
@@ -34,7 +34,7 @@
 
 .site-list__link--active {
   padding-bottom: 7px;
-  border-bottom: 2px solid $mobile-menu-active;
+  border-bottom: 2px solid $menu-active;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,6 +48,7 @@
     border: none;
     padding: 0;
     margin-right: 10px;
+    min-height: 35px;
 
     &:last-child {
       margin-right: 0;
@@ -62,22 +63,35 @@
 @media (min-width: $desktop-width) {
   .site-list {
     justify-content: flex-end;
-    background-color: forestgreen; //temporary
   }
 
   .site-list__item {
-    margin-right: 23px;
+    margin-right: 35px;
   }
 
   .site-list__link {
     font-size: 20px;
-    font-weight: normal;
+    padding-bottom: 10px;
+  }
+
+  .page-header--background .site-list__link {
     color: rgb(255, 255, 255);
-    padding-bottom: 12px;
+
+    &--active {
+      border-color: rgb(225, 225, 225);
+    }
+
+    &[href]:hover,
+    &[href]:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &[href]:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .site-list__link--active {
-    border-color: rgb(225, 225, 225);
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 }

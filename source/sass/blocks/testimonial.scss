@@ -1,8 +1,10 @@
 .testimonial {
   background-color: $secondary-bg;
+  height: 705px;
+  overflow: hidden;
 
   @include mobile-padding;
-  padding-top: 33px;
+  padding-top: 20px;
   padding-bottom: 39px;
 }
 
@@ -32,6 +34,7 @@
   .testimonial {
     @include tablet-padding;
     background-color: $primary-bg;
+    height: 1040px;
   }
 
   .testimonial__description {
@@ -50,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .testimonial {
+    height: 581px;
+  }
+
   .testimonial__wrapper {
     @include block-centered;
     display: flex;

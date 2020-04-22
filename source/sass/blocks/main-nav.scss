@@ -2,20 +2,15 @@
   position: relative;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-nav__burger {
   position: absolute;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   border: none;
   padding: 0;
   cursor: pointer;
   width: 25px;
   height: 19px;
-  top: -29px;
+  top: -45px;
   right: 20px;
 }
 
@@ -30,8 +25,8 @@
   right: 0;
   width: 25px;
   height: 2px;
-  background-color: #222222;
-  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  background-color: rgb(34, 34, 34);
+  box-shadow: 0 8px 0 0 rgb(34, 34, 34), 0 16px 0 0 rgb(34, 34, 34);
 }
 
 .main-nav--opened .main-nav__burger {
@@ -45,7 +40,7 @@
     right: 0;
     width: 25px;
     height: 2px;
-    background-color: #222222;
+    background-color: rgb(34, 34, 34);
   }
 
   &::before {

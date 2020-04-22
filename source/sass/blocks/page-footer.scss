@@ -1,13 +1,35 @@
 .page-footer {
   background-color: $secondary-bg;
-  display: flex;
-  flex-direction: column;
 }
 
 .page-footer__wrapper {
   @include mobile-padding;
   display: flex;
   flex-direction: column;
+}
+
+.page-footer__logo {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-left: 27%;
+  padding-right: 27%;
+}
+
+.page-footer__copyright {
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,6 +38,16 @@
     @include tablet-padding;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 150px;
+    padding-bottom: 15px;
+  }
+
+  .page-footer__logo {
+    margin-right: 30px;
+  }
+
+  .page-footer__social {
+    padding: 0;
   }
 }
 
