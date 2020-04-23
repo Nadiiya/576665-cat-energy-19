@@ -1,3 +1,14 @@
 .additional-list {
   @include list-reset;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-list {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  margin-bottom: 90px;
 }
