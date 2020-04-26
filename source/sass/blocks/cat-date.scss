@@ -1,14 +1,51 @@
 .cat-date {
   border: none;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.cat-date__item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cat-date__label {
+  margin-right: 15px;
 }
 
 .cat-date__input {
   height: 45px;
-  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-date {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .cat-date__item {
+    margin-bottom: 20px;
+  }
+
+  .cat-date__input {
+    height: 52px;
+    padding: 5px 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .cat-date {
-    width: 50%;
+    width: calc(50% - 40px);
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

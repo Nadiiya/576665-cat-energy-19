@@ -2,27 +2,16 @@
   position: relative;
 }
 
-.footer-contacts__address {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .footer-contacts__map {
-  min-height: 400px;
+  min-height: 362px;
   background-image: url("../../img/bg-map-mobile@1x.png");
-  background-position: center;
-  margin-top: 76px;
+  background-position: bottom center;
 }
 
 @media (min-width: $tablet-width) {
-  .footer-contacts__address {
-    position: static;
-  }
-
   .footer-contacts__map {
-    margin-top: 0;
     background-image: url("../../img/bg-map-tablet@1x.png");
+    min-height: 400px;
   }
 }
 

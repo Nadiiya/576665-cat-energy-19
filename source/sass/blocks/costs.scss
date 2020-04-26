@@ -14,12 +14,20 @@
 
 @media (min-width: $tablet-width) {
   .costs {
+    font-size: 20px;
     flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .costs {
     flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .costs__option {
+    margin-right: 65px;
   }
 }

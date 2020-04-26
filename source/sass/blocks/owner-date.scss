@@ -1,6 +1,6 @@
 .owner-date {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .owner-date__legend {
@@ -8,7 +8,7 @@
 }
 
 .owner-date__item {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   display: flex;
   align-items: center;
 
@@ -19,7 +19,33 @@
 
 .owner-date__input {
   width: 100%;
-  height: 52px;
+  height: 45px;
+  padding-right: 40px;
+}
+
+.owner-date__label {
+  margin-right: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-date {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .owner-date__legend {
+    margin-bottom: 75px;
+
+    &::after {
+      top: 20px;
+      margin-left: 43px;
+    }
+  }
+
+  .owner-date__item {
+    height: 52px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -33,5 +59,13 @@
   .owner-date__item {
     width: calc(50% - 39px);
     margin-bottom: 0;
+  }
+
+  .owner-date__input {
+    height: 52px;
+  }
+
+  .owner-date__label {
+    margin-right: 20px;
   }
 }

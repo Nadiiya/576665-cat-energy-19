@@ -1,4 +1,32 @@
 .price-unit {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .price-unit {
+    font-size: 16px;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  .price-unit__price {
+    margin-left: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-unit {
+    justify-content: space-between;
+    align-self: center;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+
+  .price-unit__price {
+    margin: 0;
+  }
 }
