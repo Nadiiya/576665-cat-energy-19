@@ -1,10 +1,15 @@
 .summary-list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .summary-list__item {
   margin-right: 32px;
+  margin-bottom: 5px;
+  width: 124px;
+
 
   &:last-child {
     margin-right: 0;
@@ -14,11 +19,52 @@
 .summary-list__value {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
   color: $title-color;
+  border-radius: 3px;
+  border: solid 1px $input-border;
   margin: 0;
+  min-height: 56px;
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
 }
 
 .summary-list__option {
   font-size: 12px;
-  margin: 0;
+  margin: 0 auto;
+  width: calc(100% - 36px);
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #f2f2f2;
+  position: relative;
+  transform: translate(0, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .summary-list__item {
+    width: 162px;
+    margin-right: 42px;
+  }
+
+  .summary-list__value {
+    font-size: 30px;
+    padding-bottom: 23px;
+  }
+
+  .summary-list__option {
+    font-size: 14px;
+    width: calc(100% - 15px);
+    background-color: $primary-bg;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .summary-list {
+    justify-content: flex-start;
+  }
 }

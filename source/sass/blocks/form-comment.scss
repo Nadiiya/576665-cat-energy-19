@@ -1,13 +1,33 @@
 .form-comment {
-  padding-bottom: 31px;
+  //padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .form-comment__legend {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .form-comment__input {
+  padding-top: 15px;
+  padding-bottom: 15px;
   min-height: 150px;
   width: 100%;
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-comment {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .form-comment__legend {
+    margin-bottom: 75px;
+  }
+
+  .form-comment__input {
+    padding-top: 13px;
+    min-height: 174px;
+  }
 }

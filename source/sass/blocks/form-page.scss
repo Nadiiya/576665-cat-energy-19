@@ -1,37 +1,57 @@
 .form-page {
-  @include mobile-padding;
-  padding-top: 30px;
+  padding-top: 18px;
 }
 
 .form-page__title {
   @include section-title;
+  @include mobile-padding;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   margin-left: 0;
 }
 
 .form-page__invite {
+  @include mobile-padding;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  width: 226px;
+  line-height: 1.3;
+  width: 275px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .form-page {
     @include tablet-padding;
+    padding-top: 25px;
+  }
+
+  .form-page__title {
+    padding: 0;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 55px;
   }
 
   .form-page__invite {
     font-size: 20px;
-    width: 323px;
+    line-height: 1.5;
+    padding: 0 40px;
+    width: 410px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-page {
     @include block-centered;
+    padding-top: 47px;
+  }
+
+  .form-page__invite {
+    padding: 0;
+    width: 340px;
+    margin-bottom: 65px;
   }
 }

@@ -1,5 +1,11 @@
+.slider {
+  width: 311px;
+  margin: 0 auto;
+}
+
 .slider__list {
   @include list-reset;
+  margin-bottom: 30px;
 }
 
 .slider__item {
@@ -7,5 +13,15 @@
 
   &--active {
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 636px;
+  }
+
+  .slider__item {
+    height: 517px;
   }
 }
