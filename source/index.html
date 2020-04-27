@@ -9,7 +9,11 @@
 <body>
 <header class="page-header page-header--background">
   <a class="page-header__logo">
-    <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Кэт энерджи" width="191" height="39">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Кэт энерджи" width="191" height="39">
+    </picture>
   </a>
   <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -33,7 +37,11 @@
       <p class="main-banner__description">Занялся собой? Займись котом!</p>
       <a class="main-banner__confirm button" href="form.html">Подобрать программу</a>
     </div>
-    <img class="main-banner__img" src="img/index-can-mobile@1x.png" alt="Изображение продукта" width="280" height="270">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+      <img class="main-banner__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Изображение продукта" width="280" height="270">
+    </picture>
   </section>
   <section class="service">
     <h2 class="visually-hidden">Наши услуги</h2>
@@ -119,12 +127,12 @@
       </p>
     </div>
     <div class="footer-contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1586068427899!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<!--      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1586068427899!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
     </div>
   </div>
   <div class="page-footer__wrapper">
     <a class="page-footer__logo">
-      <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24" alt="Логотип сайта Кэт энерджи" width="128" height="24">
+      <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип сайта Кэт энерджи" width="128" height="24">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list social-list">
@@ -142,7 +150,7 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__img" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </div>

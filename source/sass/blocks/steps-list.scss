@@ -7,6 +7,7 @@
 }
 
 .steps-list__item {
+  position: relative;
   min-height: 70px;
   padding-left: 80px;
   padding-top: 5px;
@@ -16,6 +17,56 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $button-bg;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--ingredients::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-leaf@2x.png");
+      background-size: 50%;
+    }
+  }
+
+  &--recipe::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-powder@2x.png");
+      background-size: 50%;
+    }
+  }
+
+  &--dose::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-dining@2x.png");
+      background-size: 50%;
+    }
+  }
+
+
+  &--result::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-clock@2x.png");
+      background-size: 50%;
+    }
   }
 }
 
@@ -28,6 +79,7 @@
   }
 
   .steps-list__item {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     width: calc(50% - 30px);
@@ -36,6 +88,40 @@
     padding-left: 0;
     padding-right: 60px;
     margin-bottom: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 29px;
+    }
+
+    &::after {
+      font-size: 280px;
+      line-height: 1;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: $secondary-bg;
+      position: absolute;
+      top: -13px;
+      right: 50%;
+      transform: translateX(50%);
+      z-index: -1;
+    }
+
+    &--ingredients::after {
+      content: "1";
+    }
+
+    &--recipe::after {
+      content: "2";
+    }
+
+    &--dose::after {
+      content: "3";
+    }
+
+    &--result::after {
+      content: "4";
+    }
   }
 }
 
@@ -46,5 +132,10 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+
+    &::after {
+      right: 0;
+      transform: none;
+    }
   }
 }

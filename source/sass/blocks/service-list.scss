@@ -6,6 +6,7 @@
 }
 
 .service-list__item {
+  position: relative;
   background-color: $secondary-bg;
   padding-top: 22px;
   padding-right: 30px;
@@ -14,6 +15,41 @@
   margin-bottom: 20px;
   width: 100%;
   min-height: 266px;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $button-bg;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+
+  &--slim::after {
+    top: 22px;
+    left: 30px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+  }
+
+  &--pro::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
+  }
 }
 
 .service-list__title {
@@ -56,6 +92,30 @@
     padding-bottom: 60px;
     padding-left: 52px;
     margin-bottom: 30px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 62px;
+      left: auto;
+    }
+
+    &--slim::after {
+      width: 141px;
+      height: 194px;
+      top: 80px;
+      right: 92px;
+      left: auto;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 113px;
+      top: 135px;
+      right: 28px;
+      left: auto;
+    }
   }
 
   .service-list__description {
@@ -91,6 +151,29 @@
     padding-bottom: 60px;
     padding-left: 52px;
     margin-bottom: 0;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
+
+    &--slim::after {
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      left: 65px;
+      right: auto;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 57px;
+      top: 69px;
+      left: 34px;
+      right: auto;
+    }
   }
 
   .service-list__title {
