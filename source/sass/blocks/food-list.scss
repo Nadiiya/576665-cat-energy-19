@@ -37,6 +37,11 @@
   margin-bottom: 12px;
 }
 
+.food-list__img-link {
+  width: 140px;
+  height: 144px;
+}
+
 .food-list__order {
   font-size: 16px;
   width: 280px;
@@ -53,8 +58,8 @@
   .food-list__item {
     width: calc(50% - 30px);
     background-color: $secondary-bg;
-    padding-right: 38px;
-    padding-left: 38px;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 40px;
     margin-top: 140px;
     min-height: 431px;
@@ -75,17 +80,24 @@
   }
 
   .food-list__order {
-    width: 100%;
+    width: calc(100% - 70px);
   }
 
   .food-list__img-link {
-    margin-top: -30%;
+    margin-top: -15%;
+    width: 316px;
+    height: auto;
+
+    &--big {
+      margin-top: -25%;
+    }
   }
 
   .food-list__wrapper {
     width: 100%;
-    margin-top: auto;
-    padding-bottom: 31px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -98,5 +110,15 @@
     width: calc(25% - 60px);
     margin: 0;
     margin-top: 142px;
+  }
+
+  .food-list__img-link {
+    margin-top: -20%;
+    width: 245px;
+    height: auto;
+
+    &--big {
+      margin-top: -35%;
+    }
   }
 }

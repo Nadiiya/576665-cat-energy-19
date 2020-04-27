@@ -18,6 +18,10 @@
   padding: 25px 20px 125px 20px;
   text-align: center;
   width: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .main-banner__title {
@@ -88,6 +92,8 @@
     position: absolute;
     bottom: 0;
     right: 250px;
+    width: 709px;
+    height: 609px;
   }
 }
 
@@ -118,5 +124,7 @@
 
   .main-banner__img {
     right: 33%;
+    width: 552px;
+    height: 499px;
   }
 }
