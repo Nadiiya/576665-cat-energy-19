@@ -9,7 +9,11 @@
 .social-list__item {
   width: 20px;
   height: 20px;
-  background-color: red;
+  border: 1px solid red;
+}
+
+.social-list__link {
+  color: rgb(102, 102, 102);
 }
 
 @media (min-width: $tablet-width) {
