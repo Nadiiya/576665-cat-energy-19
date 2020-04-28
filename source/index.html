@@ -99,11 +99,19 @@
       </div>
       <div class="testimonial__slider slider">
         <ul class="testimonial__list slider__list">
-          <li class="testimonial__item slider__item slider__item--active">
-            <img class="testimonial__img testimonial__img--before slider__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Изображение до программы">
-          </li>
           <li class="testimonial__item slider__item">
-            <img class="testimonial__img testimonial__img--after slider__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Изображение после программы">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="testimonial__img testimonial__img--before slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение до программы">
+            </picture>
+          </li>
+          <li class="testimonial__item slider__item slider__item--active">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="testimonial__img testimonial__img--after slider__img" src="img/after-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение до программы">
+            </picture>
           </li>
         </ul>
         <div class="slider__controls toggle">
