@@ -2,22 +2,59 @@
   @include list-reset;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .social-list__item {
-  width: 20px;
-  height: 20px;
-  background-color: red;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: rgb(102, 102, 102);
+
+  &:hover,
+  &:focus {
+    color: $button-bg;
+  }
+
+  &:active {
+    color: $button-bg;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .social-list__item {
-    margin-right: 29px;
+  .social-list__link {
+    width: 28px;
+    height: 28px;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  .social-list__item {
+    margin-right: 28px;
+  }
+
+  .social-list__icon--vk {
+    width: 28px;
+    height: 16px;
+  }
+
+  .social-list__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon--fb {
+    width: 14px;
+    height: 28px;
   }
 }
