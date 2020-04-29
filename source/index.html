@@ -39,6 +39,9 @@
       <a class="main-banner__confirm button" href="form.html">Подобрать программу</a>
     </div>
     <picture>
+      <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
       <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
       <img class="main-banner__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Изображение продукта" width="280" height="270">
@@ -102,6 +105,9 @@
         <ul class="testimonial__list slider__list">
           <li class="testimonial__item slider__item">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="testimonial__img testimonial__img--before slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение до программы">
@@ -109,6 +115,9 @@
           </li>
           <li class="testimonial__item slider__item slider__item--active">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="testimonial__img testimonial__img--after slider__img" src="img/after-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение до программы">
@@ -140,7 +149,7 @@
     </div>
   </div>
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="index.html">
+    <a class="page-footer__logo">
       <span class="visually-hidden">Логотип сайта Кэт энерджи</span>
       <svg width="128" height="24">
         <use xlink:href="img/sprite.svg#logo-footer"></use>
@@ -177,7 +186,7 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hiddengit">Логотип HTML Academy</span>
+        <span class="visually-hidden">Логотип HTML Academy</span>
         <svg class="copyright__img" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
         </svg>
