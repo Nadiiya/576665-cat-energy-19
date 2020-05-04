@@ -60,21 +60,21 @@
         width: 50%;
         height: 696px;
         background-color: rgb(34, 139, 34);
-        background-image: url("/source/img/index-background-desktop@1x.jpg");
+        background-image: url("../img/index-background-desktop@1x.jpg");
         background-size: cover;
         position: absolute;
         top: 0;
         right: 0;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background-image: url("../../img/index-background-desktop@2x.jpg");
+          background-image: url("../img/index-background-desktop@2x.jpg");
         }
       }
     }
   }
 
   .page-header__logo {
-    width: 50%;
+    width: 203px;
     margin: 0;
   }
 
