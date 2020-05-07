@@ -78,6 +78,33 @@
   text-transform: uppercase;
   color: $title-color;
   text-decoration: none;
+  padding-right: 35px;
+  position: relative;
+  transition: all 0.5s ease-out;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    width: 25px;
+    height: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    padding-right: 55px;
+
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 34px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -132,6 +159,8 @@
 
   .service-list__link {
     font-size: 20px;
+    align-self: flex-start;
+    padding-right: 48px;
   }
 }
 
@@ -181,5 +210,9 @@
     padding-left: 160px;
     display: flex;
     align-items: center;
+  }
+
+  .service-list__link::after {
+    top: 5px;
   }
 }

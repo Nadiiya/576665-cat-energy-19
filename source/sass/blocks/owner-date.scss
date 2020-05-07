@@ -11,9 +11,27 @@
   margin-bottom: 13px;
   display: flex;
   align-items: center;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.owner-date__icon {
+  position: absolute;
+  fill: $label-color;
+
+  &--mail {
+    right: 15px;
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    right: 13px;
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -21,7 +39,16 @@
   width: 100%;
   height: 45px;
   padding-right: 40px;
+
+  &:focus + .owner-date__icon {
+    fill: $button-bg;
+  }
+
+  &:focus:invalid + .owner-date__icon {
+    fill: red;
+  }
 }
+
 
 .owner-date__label {
   margin-right: 10px;
