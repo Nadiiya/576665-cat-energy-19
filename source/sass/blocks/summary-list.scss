@@ -67,4 +67,8 @@
   .summary-list {
     justify-content: flex-start;
   }
+
+  .summary-list__option {
+    background-color: $secondary-bg;
+  }
 }

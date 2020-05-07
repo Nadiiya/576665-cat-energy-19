@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подобрать програму</title>
-  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
   <a class="page-header__logo" href="index.html">
     <picture>
@@ -39,11 +42,11 @@
         <ul class="request-form__list cat-date__list">
           <li class="cat-date__item">
             <label class="request-form__label cat-date__label" for="cat-name">Имя:*</label>
-            <input class="request-form__input cat-date__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+            <input class="request-form__input cat-date__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required="">
           </li>
           <li class="cat-date__item">
             <label class="request-form__label cat-date__label" for="cat-weight">Вес (кг):*</label>
-            <input class="request-form__input cat-date__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+            <input class="request-form__input cat-date__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required="">
           </li>
           <li class="cat-date__item">
             <label class="request-form__label cat-date__label" for="cat-age">Возраст (лет):</label>
@@ -56,7 +59,7 @@
       <fieldset class="request-form__field-group choosing-program__field-group">
         <ul class="request-form__list choosing-program__list">
           <li class="choosing-program__item">
-            <input class="request-form__input choosing-program__input visually-hidden" type="radio" id="slim-program" name="program" checked>
+            <input class="request-form__input choosing-program__input visually-hidden" type="radio" id="slim-program" name="program" checked="">
             <label class="request-form__label choosing-program__label" for="slim-program">Похудение</label>
           </li>
           <li class="choosing-program__item">
@@ -75,12 +78,22 @@
         <legend class="request-form__legend owner-date__legend">Контактные данные (владельца кота)</legend>
         <ul class="request-form__list owner-date__list">
           <li class="owner-date__item">
-            <label class="request-form__label owner-date__label" for="owner-mail">E-mail:*</label>
-            <input class="request-form__input owner-date__input" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+            <label class="request-form__label owner-date__label" for="owner-mail">
+              E-mail:*
+            </label>
+            <input class="request-form__input owner-date__input" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required="">
+            <svg class="owner-date__icon owner-date__icon--mail" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </li>
           <li class="owner-date__item">
-            <label class="request-form__label owner-date__label" for="owner-phone">Телефон:*</label>
-            <input class="request-form__input owner-date__input" type="tel" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+            <label class="request-form__label owner-date__label" for="owner-phone">
+              Телефон:*
+            </label>
+            <input class="request-form__input owner-date__input" type="tel" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required="">
+            <svg class="owner-date__icon owner-date__icon--phone" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
@@ -88,7 +101,7 @@
     <div class="request-form__field-wrapper form-comment">
       <fieldset class="request-form__field-group form-comment__field-group">
         <legend class="request-form__legend form-comment__legend">Комментарий</legend>
-        <label class="visually-hidden" for="owner-comment" class="visually-hidden">Расскажите обо всех повадках кота</label>
+        <label class="visually-hidden" for="owner-comment">Расскажите обо всех повадках кота</label>
         <textarea class="request-form__input form-comment__input" type="text" id="owner-comment" name="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
     </div>
@@ -97,7 +110,7 @@
         <legend class="request-form__legend additional-order__legend">Дополнительно</legend>
         <ul class="request-form__list additional-order__list">
           <li class="additional-order__item">
-            <input class="request-form__input additional-order__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+            <input class="request-form__input additional-order__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked="">
             <label class="request-form__label additional-order__label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="additional-order__item">
@@ -134,10 +147,7 @@
   </div>
   <div class="page-footer__wrapper">
     <a class="page-footer__logo" href="index.html">
-      <span class="visually-hidden">Логотип сайта Кэт энерджи</span>
-      <svg width="128" height="24">
-        <use xlink:href="img/sprite.svg#logo-footer"></use>
-      </svg>
+      <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип сайта Кэт энерджи" width="128" height="24">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list social-list">

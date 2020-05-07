@@ -38,6 +38,7 @@
     border-top: 1px solid $border-color;
     padding-top: 45px;
     padding-bottom: 75px;
+    background-image: linear-gradient(transparent 50%, $secondary-bg 50%);
   }
 
   .testimonial__title {
@@ -74,6 +75,7 @@
   .testimonial {
     padding-top: 25px;
     border-top: none;
+    background-image: linear-gradient(transparent 15%, $secondary-bg 15%);
   }
 
   .testimonial__wrapper {

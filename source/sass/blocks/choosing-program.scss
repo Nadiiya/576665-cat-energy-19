@@ -38,6 +38,16 @@
     background-color: #ffffff;
     position: absolute;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active,
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .choosing-program__input:checked + .choosing-program__label::after {

@@ -5,10 +5,7 @@
 .form-page__title {
   @include section-title;
   @include mobile-padding;
-  margin-top: 0;
-  margin-right: 0;
   margin-bottom: 27px;
-  margin-left: 0;
 }
 
 .form-page__invite {

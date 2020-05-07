@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header page-header--background">
   <a class="page-header__logo">
     <picture>
@@ -103,7 +105,7 @@
       </div>
       <div class="testimonial__slider slider">
         <ul class="testimonial__list slider__list">
-          <li class="testimonial__item slider__item">
+          <li class="testimonial__item slider__item slider__item--active">
             <picture>
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -113,7 +115,7 @@
               <img class="testimonial__img testimonial__img--before slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение до программы">
             </picture>
           </li>
-          <li class="testimonial__item slider__item slider__item--active">
+          <li class="testimonial__item slider__item">
             <picture>
               <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
@@ -150,10 +152,7 @@
   </div>
   <div class="page-footer__wrapper">
     <a class="page-footer__logo">
-      <span class="visually-hidden">Логотип сайта Кэт энерджи</span>
-      <svg width="128" height="24">
-        <use xlink:href="img/sprite.svg#logo-footer"></use>
-      </svg>
+      <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип сайта Кэт энерджи" width="128" height="24">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list social-list">
@@ -161,7 +160,7 @@
           <a class="social-list__link" href="">
             <span class="visually-hidden">Мы в Вконтакте</span>
             <svg class="social-list__icon social-list__icon--vk" width="22" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
@@ -169,7 +168,7 @@
           <a class="social-list__link social-list__link--instagram" href="">
             <span class="visually-hidden">Мы в Инстаграме</span>
             <svg class="social-list__icon social-list__icon--instagram" width="17" height="17">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -177,7 +176,7 @@
           <a class="social-list__link social-list__link--fb" href="">
             <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg class="social-list__icon social-list__icon--fb" width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -188,7 +187,7 @@
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy</span>
         <svg class="copyright__img" width="27" height="34">
-          <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+          <use xlink:href="#htmlacademy"></use>
         </svg>
       </a>
     </div>
