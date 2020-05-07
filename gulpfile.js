@@ -1,5 +1,3 @@
-"use strict";
-
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
@@ -15,6 +13,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean", function () {
   return del("build");
@@ -67,6 +66,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
