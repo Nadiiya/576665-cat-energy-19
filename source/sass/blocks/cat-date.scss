@@ -23,6 +23,16 @@
 .cat-date__input {
   height: 45px;
   flex-grow: 1;
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    appearance: textfield;
+  }
 }
 
 @media (min-width: $tablet-width) {

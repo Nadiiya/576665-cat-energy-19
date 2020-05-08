@@ -4,10 +4,22 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+  outline: none;
   padding: 8px;
   text-decoration: none;
   display: inline-block;
   min-height: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-hover;
+    color: rgba(225, 225, 225, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
