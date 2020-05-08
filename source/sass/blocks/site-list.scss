@@ -7,10 +7,11 @@
 .site-list__item {
   @include mobile-padding;
   @include catalog-border;
-  padding: 10px;
-  padding-top: 18px;
-  text-align: center;
-  min-height: 65px;
+  padding: 10px 12px;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .site-list__link {
@@ -20,7 +21,7 @@
   color: $title-color;
   text-transform: uppercase;
   text-decoration: none;
-  padding-bottom: 9px;
+  position: relative;
 
   &[href]:hover,
   &[href]:focus {
@@ -30,12 +31,22 @@
   &[href]:active {
     color: $mobile-menu-down;
   }
+
+  &--active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $menu-active;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+  }
 }
 
-.site-list__link--active {
-  padding-bottom: 7px;
-  border-bottom: 2px solid $menu-active;
-}
+//.site-list__link--active {
+//  padding-bottom: 7px;
+//  border-bottom: 2px solid $menu-active;
+//}
 
 @media (min-width: $tablet-width) {
   .site-list {

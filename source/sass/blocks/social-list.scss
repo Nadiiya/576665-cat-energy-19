@@ -1,6 +1,5 @@
 .social-list {
   @include list-reset;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -8,7 +7,7 @@
 }
 
 .social-list__item {
-  margin-right: 35px;
+  margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
@@ -22,7 +21,7 @@
 .social-list__link {
   display: flex;
   align-items: center;
-  width: 30px;
+  width: 25px;
   height: 30px;
   color: rgb(102, 102, 102);
 

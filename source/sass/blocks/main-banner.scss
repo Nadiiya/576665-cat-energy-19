@@ -1,6 +1,6 @@
 .main-banner {
   position: relative;
-  min-height: 502px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,7 @@
 
 .main-banner__title {
   @include section-title;
+  color: (225, 225, 225);
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -44,7 +45,7 @@
 .main-banner__confirm {
   min-width: 280px;
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   right: 50%;
   transform: translate(50%, -50%);
 }
