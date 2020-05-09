@@ -43,11 +43,6 @@
   }
 }
 
-//.site-list__link--active {
-//  padding-bottom: 7px;
-//  border-bottom: 2px solid $menu-active;
-//}
-
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
@@ -82,14 +77,13 @@
 
   .site-list__link {
     font-size: 20px;
-    padding-bottom: 10px;
   }
 
   .page-header--background .site-list__link {
     color: rgb(255, 255, 255);
 
-    &--active {
-      border-color: rgb(225, 225, 225);
+    &--active::after {
+      background-color: rgb(255, 255, 255);
     }
 
     &[href]:hover,
@@ -100,9 +94,5 @@
     &[href]:active {
       color: rgba(255, 255, 255, 0.3);
     }
-  }
-
-  .site-list__link--active {
-    padding-bottom: 8px;
   }
 }

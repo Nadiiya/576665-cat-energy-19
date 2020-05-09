@@ -25,3 +25,9 @@
     height: 517px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__list {
+    margin-bottom: 25px;
+  }
+}

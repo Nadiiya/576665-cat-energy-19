@@ -115,10 +115,17 @@
     width: 100%;
     min-height: 372px;
     padding-top: 70px;
-    padding-right: 300px;
     padding-bottom: 60px;
     padding-left: 52px;
     margin-bottom: 30px;
+
+    &--slim {
+      padding-right: 280px;
+    }
+
+    &--pro {
+      padding-right: 315px;
+    }
 
     &::before {
       width: 200px;
@@ -206,10 +213,16 @@
   }
 
   .service-list__title {
-    min-height: 100px;
+    min-height: 110px;
     padding-left: 160px;
     display: flex;
     align-items: center;
+  }
+
+  .service-list__description {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
   }
 
   .service-list__link::after {
