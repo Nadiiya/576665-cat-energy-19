@@ -28,7 +28,7 @@
     padding: 0;
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .form-page__invite {
@@ -43,7 +43,7 @@
 @media (min-width: $desktop-width) {
   .form-page {
     @include block-centered;
-    padding-top: 47px;
+    padding-top: 25px;
   }
 
   .form-page__invite {

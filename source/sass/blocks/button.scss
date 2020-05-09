@@ -8,8 +8,11 @@
   outline: none;
   padding: 8px;
   text-decoration: none;
-  display: inline-block;
+  line-height: 1;
   min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {
@@ -24,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    min-width: 52px;
+    padding: 10px;
     font-size: 20px;
   }
 }

@@ -43,7 +43,7 @@
 }
 
 .main-banner__confirm {
-  min-width: 280px;
+  width: 280px;
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -82,7 +82,8 @@
   }
 
   .main-banner__confirm {
-    min-width: 240px;
+    width: 245px;
+    min-height: 52px;
     z-index: 10;
     position: static;
     transform: none;
@@ -102,13 +103,13 @@
 @media (min-width: $desktop-width) {
   .main-banner {
     @include block-centered;
-    min-height: 555px;
+    min-height: 535px;
   }
 
   .main-banner__wrapper {
     width: 50%;
     padding-left: 80px;
-    padding-top: 80px;
+    padding-top: 60px;
   }
 
   .main-banner__title {
@@ -117,11 +118,11 @@
   }
 
   .main-banner__description {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .main-banner__confirm {
-    display: inline-block;
+    min-width: 245px;
   }
 
   .main-banner__img {

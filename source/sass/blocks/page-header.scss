@@ -49,8 +49,9 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include block-centered;
-    padding-top: 25px;
-    min-height: 142px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    min-height: 160px;
 
     &--background {
       position: relative;
