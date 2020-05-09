@@ -56,20 +56,6 @@
     position: relative;
     border-bottom: none;
     margin-bottom: 75px;
-
-    &::before,
-    &::after {
-      @include title-line;
-      top: 17px;
-    }
-
-    &::before {
-      margin-left: calc(-100% - 37px);
-    }
-
-    &::after {
-      margin-left: 37px;
-    }
   }
 
   .additional-products__order-all {

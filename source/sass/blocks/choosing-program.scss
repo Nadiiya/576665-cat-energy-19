@@ -63,8 +63,8 @@
 
 @media (min-width: $tablet-width) {
   .choosing-program {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 67px;
+    padding-left: 70px;
     margin-bottom: 50px;
   }
 
@@ -101,6 +101,7 @@
 @media (min-width: $desktop-width) {
   .choosing-program {
     width: calc(50% - 40px);
+    max-width: 570px;
     padding-right: 0;
     padding-left: 0;
   }
