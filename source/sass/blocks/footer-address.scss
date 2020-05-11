@@ -1,5 +1,6 @@
 .footer-address {
   @include mobile-padding;
+  height: 113px;
   min-height: 114px;
   width: 100%;
   background-color: $primary-bg;
