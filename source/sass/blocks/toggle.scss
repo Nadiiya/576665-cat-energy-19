@@ -17,6 +17,7 @@
   outline: none;
   background-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .toggle__scale {
@@ -45,11 +46,16 @@
 
 @media (min-width: $tablet-width) {
   .toggle {
-    width: 580px;
+    width: 570px;
     height: 35px;
+  }
+
+  .toggle__button {
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
+      padding-bottom: 4px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     }
 
@@ -64,6 +70,10 @@
     background-color: #eaeaea;
     height: 6px;
     border-radius: 2px;
+  }
+
+  .toggle__button {
+    font-size: 20px;
   }
 
   .toggle__bar {
@@ -96,7 +106,4 @@
     margin-left: auto;
   }
 
-  .toggle__button {
-    font-size: 20px;
-  }
 }

@@ -9,14 +9,14 @@
   &--line {
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      height: 3px;
-      width: 100%;
-      top: 20px;
-      background-color: #68b738;
-    }
+    //&::before {
+    //  content: "";
+    //  position: absolute;
+    //  height: 3px;
+    //  width: 100%;
+    //  top: 20px;
+    //  background-color: #68b738;
+    //}
   }
 }
 
@@ -100,10 +100,10 @@
     padding-bottom: 75px;
   }
 
-  .request-form__field-wrapper--line::before {
-    top: 42px;
-    margin-left: -70px;
-  }
+  //.request-form__field-wrapper--line::before {
+  //  top: 42px;
+  //  margin-left: -70px;
+  //}
 
   .request-form__legend {
     font-size: 36px;
@@ -138,7 +138,7 @@
   }
 
   .request-form__footnote {
-    width: calc(50% - 30px);
+    width: 50%;
     font-size: 16px;
   }
 }
@@ -156,11 +156,11 @@
     padding-right: 40px;
   }
 
-  .request-form__field-wrapper--line::before {
-    top: 42px;
-    width: calc(100% + 110px);
-    max-width: 1400px;
-  }
+  //.request-form__field-wrapper--line::before {
+  //  top: 42px;
+  //  width: 100%;
+  //  max-width: 1400px;
+  //}
 
   .request-form__submit {
     margin: 0;
