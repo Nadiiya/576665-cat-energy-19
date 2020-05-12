@@ -9,6 +9,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 2px;
+    background-color: rgba(34, 34, 34, 0.2);
+    top: 40px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .show-all__title {
@@ -45,6 +60,12 @@
     padding-left: 38px;
     background-color: $primary-bg;
     border: 1px solid rgb(239, 239, 239);
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: 83px;
+    }
   }
 
   .show-all__title {

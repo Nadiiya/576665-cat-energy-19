@@ -52,6 +52,7 @@
 
   .toggle__button {
     padding-bottom: 5px;
+    font-size: 20px;
 
     &:hover,
     &:focus {
@@ -70,10 +71,6 @@
     background-color: #eaeaea;
     height: 6px;
     border-radius: 2px;
-  }
-
-  .toggle__button {
-    font-size: 20px;
   }
 
   .toggle__bar {
@@ -105,5 +102,4 @@
     margin: 0;
     margin-left: auto;
   }
-
 }
