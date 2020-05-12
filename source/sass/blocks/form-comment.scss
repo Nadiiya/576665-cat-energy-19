@@ -1,10 +1,10 @@
 .form-comment {
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 38px;
 }
 
 .form-comment__legend {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .form-comment__input {
@@ -18,11 +18,11 @@
 @media (min-width: $tablet-width) {
   .form-comment {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 87px;
   }
 
   .form-comment__legend {
-    margin-bottom: 75px;
+    margin-bottom: 30px;
   }
 
   .form-comment__input {

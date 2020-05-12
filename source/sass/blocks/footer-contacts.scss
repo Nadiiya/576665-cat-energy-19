@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.footer-contacts__wrapper {
+  @include mobile-padding;
+  background-color: $primary-bg;
+}
+
 .footer-contacts__map {
   height: 365px;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -15,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-contacts__wrapper {
+    padding: 0;
+  }
+
   .footer-contacts__map {
     background-image: url("../img/bg-map-tablet@1x.png");
     height: 400px;
@@ -26,10 +35,16 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .footer-contacts__wrapper {
+    @include block-centered;
+    background-color: transparent;
+  }
+
   .footer-contacts__address {
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 40px;
     transform: translateY(-50%);
   }
 

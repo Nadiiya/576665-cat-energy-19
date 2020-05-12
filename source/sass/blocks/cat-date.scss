@@ -1,7 +1,7 @@
 .cat-date {
   border: none;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .cat-date__item {
@@ -53,9 +53,9 @@
 
 @media (min-width: $desktop-width) {
   .cat-date {
-    width: calc(50% - 40px);
-    max-width: 700px;
+    width: 570px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 80px;
   }
 }
