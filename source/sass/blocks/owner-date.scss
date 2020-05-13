@@ -1,10 +1,10 @@
 .owner-date {
   padding-top: 10px;
-  padding-bottom: 41px;
+  padding-bottom: 20px;
 }
 
 .owner-date__legend {
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   width: 220px;
 }
 
@@ -50,7 +50,6 @@
   }
 }
 
-
 .owner-date__label {
   margin-right: 10px;
 }
@@ -58,16 +57,12 @@
 @media (min-width: $tablet-width) {
   .owner-date {
     padding-top: 20px;
-    padding-bottom: 88px;
+    padding-bottom: 50px;
   }
 
   .owner-date__legend {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
     width: auto;
-  }
-
-  .owner-date__label {
-    margin-right: 15px;
   }
 
   .owner-date__item {
@@ -95,5 +90,9 @@
 
   .owner-date__label {
     margin-right: 20px;
+  }
+
+  .owner-date__icon {
+    right: 20px;
   }
 }

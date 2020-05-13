@@ -1,12 +1,12 @@
 .footer-address {
-  height: auto;
+  @include mobile-padding;
+  height: 113px;
   min-height: 114px;
   width: 100%;
+  background-color: $primary-bg;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .footer-address__title {
@@ -32,7 +32,8 @@
   .footer-address {
     padding-right: 70px;
     padding-left: 70px;
-    min-height: 197px;
+    height: auto;
+    min-height: 200px;
   }
 
   .footer-address__title {
@@ -55,7 +56,6 @@
     min-height: 201px;
     padding-right: 90px;
     padding-left: 75px;
-    background-color: $primary-bg;
   }
 
   .footer-address__text {

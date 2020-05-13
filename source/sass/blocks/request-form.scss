@@ -5,13 +5,18 @@
   padding-bottom: 33px;
 }
 
-.request-form__fields-centered {
-  width: 100%;
-}
-
 .request-form__field-wrapper {
   &--line {
-    border-top: 3px solid $button-bg;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $button-bg;
+      top: 20px;
+    }
   }
 }
 
@@ -29,10 +34,9 @@
 
 .request-form__legend {
   padding: 0;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-left: 20px;
   margin-left: -20px;
-  top: -25px;
   position: relative;
   font-size: 24px;
   line-height: 1;
@@ -92,22 +96,20 @@
   .request-form {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 75px;
   }
 
   .request-form__legend {
     font-size: 36px;
     line-height: 1;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-left: -42px;
-    top: -45px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .request-form__label,
   .request-form__input {
     font-size: 20px;
-    line-height: 1;
   }
 
   .request-form__input {
@@ -118,6 +120,11 @@
     padding-left: 70px;
     padding-right: 70px;
     width: 100%;
+
+    &--line::before {
+      top: 40px;
+      margin-left: -70px;
+    }
   }
 
   .request-form__field-group {
@@ -130,10 +137,10 @@
     height: 52px;
     margin-bottom: 0;
     margin-left: 70px;
-    margin-right: 60px;
   }
 
   .request-form__footnote {
+    width: calc(50% - 40px);
     font-size: 16px;
   }
 }
@@ -141,18 +148,15 @@
 @media (min-width: $desktop-width) {
   .request-form {
     padding-bottom: 80px;
-    justify-content: space-between;
   }
 
   .request-form__field-wrapper {
     padding: 0;
-  }
 
-  .request-form__fields-centered {
-    @include block-centered;
-
-    &--row {
-      display: flex;
+    &--line::before {
+      top: 45px;
+      width: calc(100% + 80px);
+      margin-left: -40px;
     }
   }
 
@@ -163,6 +167,5 @@
   .request-form__submit {
     margin: 0;
     width: 568px;
-    margin-right: 80px;
   }
 }

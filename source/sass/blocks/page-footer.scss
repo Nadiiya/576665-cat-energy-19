@@ -48,6 +48,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 150px;
+    padding-bottom: 10px;
   }
 
   .page-footer__logo {
@@ -58,11 +59,13 @@
   }
 
   .page-footer__social {
+    //width: calc(33% - 50px);
     padding: 0;
     border-bottom: none;
   }
 
   .page-footer__copyright {
+    //width: calc(33% - 50px);
     justify-content: flex-end;
   }
 }

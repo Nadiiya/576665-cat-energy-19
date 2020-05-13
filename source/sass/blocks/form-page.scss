@@ -42,16 +42,12 @@
 
 @media (min-width: $desktop-width) {
   .form-page {
-    padding-top: 25px;
-  }
-
-  .form-page__wrapper {
     @include block-centered;
+    padding-top: 25px;
   }
 
   .form-page__title {
     padding: 0;
-    margin-bottom: 60px;
   }
 
   .form-page__invite {

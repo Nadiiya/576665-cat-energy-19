@@ -19,14 +19,6 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav__burger {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__list {
-  display: flex;
-}
-
 .main-nav--closed .main-nav__burger::before {
   content: "";
   position: absolute;
@@ -59,6 +51,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--nojs .main-nav__burger {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
