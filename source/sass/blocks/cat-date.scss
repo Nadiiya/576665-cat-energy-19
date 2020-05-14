@@ -1,7 +1,7 @@
 .cat-date {
   border: none;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .cat-date__item {
@@ -23,12 +23,22 @@
 .cat-date__input {
   height: 45px;
   flex-grow: 1;
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    appearance: textfield;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .cat-date {
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
   }
 
   .cat-date__item {
@@ -44,6 +54,7 @@
 @media (min-width: $desktop-width) {
   .cat-date {
     width: calc(50% - 40px);
+    max-width: 700px;
     padding-top: 0;
     padding-bottom: 0;
   }

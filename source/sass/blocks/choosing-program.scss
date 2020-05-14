@@ -1,18 +1,19 @@
 .choosing-program {
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .choosing-program__field-group {
   @include mobile-padding;
   border: 1px solid $input-border;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+  min-width: 320px;
 }
 
 .choosing-program__item {
-  margin-bottom: 8px;
-  padding-left: 43px;
+  margin-bottom: 9px;
+  padding-left: 45px;
   min-height: 30px;
 
   &:last-child {
@@ -63,8 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .choosing-program {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 67px;
+    padding-left: 70px;
     margin-bottom: 50px;
   }
 
@@ -101,6 +102,7 @@
 @media (min-width: $desktop-width) {
   .choosing-program {
     width: calc(50% - 40px);
+    max-width: 570px;
     padding-right: 0;
     padding-left: 0;
   }

@@ -1,6 +1,6 @@
 .testimonial {
   background-color: $secondary-bg;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 35px;
 }
 
@@ -15,10 +15,11 @@
   @include section-title;
   margin: 0;
   margin-bottom: 25px;
+  line-height: 1.7;
 }
 
 .testimonial__result {
-  line-height: 18px;
+  line-height: 1.3;
   margin: 0;
   margin-bottom: 27px;
 }
@@ -29,7 +30,7 @@
 }
 
 .testimonial__costs {
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,8 +38,8 @@
     background-color: $primary-bg;
     border-top: 1px solid $border-color;
     padding-top: 45px;
-    padding-bottom: 75px;
-    background-image: linear-gradient(transparent 50%, $secondary-bg 50%);
+    padding-bottom: 70px;
+    background-image: linear-gradient(transparent 57%, $secondary-bg 57%);
   }
 
   .testimonial__title {
@@ -52,7 +53,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   .testimonial__result {
@@ -74,8 +75,10 @@
 @media (min-width: $desktop-width) {
   .testimonial {
     padding-top: 25px;
+    padding-bottom: 65px;
+    min-height: 620px;
     border-top: none;
-    background-image: linear-gradient(transparent 15%, $secondary-bg 15%);
+    background-image: linear-gradient(transparent 25%, $secondary-bg 25%);
   }
 
   .testimonial__wrapper {
@@ -84,12 +87,13 @@
   }
 
   .testimonial__title {
-    margin-bottom: 135px;
+    margin-bottom: 125px;
   }
 
   .testimonial__description {
     width: 50%;
     padding: 0;
+    margin: 0;
   }
 
   .testimonial__result {
@@ -103,5 +107,9 @@
   .testimonial__costs {
     width: 100%;
     justify-content: center;
+  }
+
+  .testimonial__slider {
+    margin-top: -50px;
   }
 }

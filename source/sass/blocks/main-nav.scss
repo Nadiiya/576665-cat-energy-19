@@ -6,6 +6,7 @@
   position: absolute;
   background-color: rgb(255, 255, 255);
   border: none;
+  outline: none;
   padding: 0;
   cursor: pointer;
   width: 25px;
@@ -54,6 +55,10 @@
 
 .main-nav--nojs .main-nav__burger {
   display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,8 +1,10 @@
 .food-list {
   @include list-reset;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .food-list__item {
@@ -13,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 320px;
 }
 
 .food-list__title-link {
@@ -104,6 +107,10 @@
 @media (min-width: $desktop-width) {
   .food-list {
     margin-bottom: 75px;
+  }
+
+  .food-list__wrapper {
+    padding-top: 25px;
   }
 
   .food-list__item {

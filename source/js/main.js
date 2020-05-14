@@ -1,6 +1,5 @@
-const navMain = document.querySelector('.main-nav');
-const navBurger = document.querySelector('.main-nav__burger');
-
+var navMain = document.querySelector('.main-nav');
+var navBurger = document.querySelector('.main-nav__burger');
 navMain.classList.remove('main-nav--nojs');
 
 navBurger.addEventListener('click', function () {

@@ -20,12 +20,11 @@
 
 @media (min-width: $tablet-width) {
   .form-page {
-    @include tablet-padding;
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
   .form-page__title {
-    padding: 0;
+    @include tablet-padding;
     font-size: 60px;
     line-height: 1;
     margin-bottom: 55px;
@@ -34,7 +33,8 @@
   .form-page__invite {
     font-size: 20px;
     line-height: 1.5;
-    padding: 0 40px;
+    padding: 0;
+    padding-left: 70px;
     width: 410px;
     margin-bottom: 45px;
   }
@@ -43,7 +43,11 @@
 @media (min-width: $desktop-width) {
   .form-page {
     @include block-centered;
-    padding-top: 47px;
+    padding-top: 25px;
+  }
+
+  .form-page__title {
+    padding: 0;
   }
 
   .form-page__invite {

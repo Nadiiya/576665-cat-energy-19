@@ -5,7 +5,7 @@
 
 .slider__list {
   @include list-reset;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .slider__item {
@@ -23,5 +23,20 @@
 
   .slider__item {
     height: 517px;
+  }
+
+  .slider__list {
+    margin-bottom: 10px;
+  }
+
+  .slider__img {
+    width: 690px;
+    height: 517px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__list {
+    margin-bottom: 25px;
   }
 }
