@@ -57,6 +57,10 @@
   display: none;
 }
 
+.main-nav--nojs .main-nav__list {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__burger {
     display: none;

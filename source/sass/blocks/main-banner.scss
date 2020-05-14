@@ -8,7 +8,7 @@
 
 .main-banner__wrapper {
   color: rgb(255, 255, 255);
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top;
@@ -31,6 +31,7 @@
   color: rgb(255, 255, 255);
   line-height: 1;
   margin-bottom: 20px;
+  max-width: 280px;
 }
 
 .main-banner__description {

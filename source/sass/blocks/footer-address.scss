@@ -3,10 +3,16 @@
   height: 113px;
   min-height: 114px;
   width: 100%;
-  background-color: $primary-bg;
+  background-color: $secondary-bg;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--transparent {
+    background-color: $primary-bg;
+  }
 }
 
 .footer-address__title {
@@ -56,6 +62,7 @@
     min-height: 201px;
     padding-right: 90px;
     padding-left: 75px;
+    background-color: $primary-bg;
   }
 
   .footer-address__text {

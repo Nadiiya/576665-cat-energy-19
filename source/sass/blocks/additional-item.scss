@@ -2,8 +2,6 @@
   @include catalog-border;
   padding-top: 7px;
   padding-bottom: 17px;
-  display: flex;
-  flex-direction: column;
 
   &:first-child {
     border-top: 1px solid $border-color;
@@ -21,6 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-item {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
