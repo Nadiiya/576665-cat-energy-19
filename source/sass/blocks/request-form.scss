@@ -169,3 +169,10 @@
     width: 568px;
   }
 }
+
+@media (min-width: 1400px) {
+  .request-form__field-wrapper::before {
+    width: 1400px;
+    margin-left: -110px;
+  }
+}

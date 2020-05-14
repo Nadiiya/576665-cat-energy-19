@@ -121,8 +121,8 @@
   }
 
   .additional-products__title {
-    padding-left: 0;
     margin-bottom: 82px;
+    margin-left: -40px;
   }
 
   .additional-products__wrapper {
@@ -151,5 +151,12 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products::before {
+    width: 1440px;
+    margin-left: -110px;
   }
 }
