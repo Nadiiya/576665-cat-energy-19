@@ -38,6 +38,9 @@
   height: 6px;
   background-color: #68b738;
   border-radius: 40px 40px 40px 40px;
+  display: block;
+  position: relative;
+  border: none;
 
   &--after {
     left: 50%;
