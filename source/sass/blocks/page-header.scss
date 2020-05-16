@@ -54,7 +54,7 @@
     min-height: 160px;
 
     &--background {
-      position: relative;
+      //TODO remove
 
       &::before {
         content: "";
@@ -86,11 +86,5 @@
 
   .page-header__nav {
     width: 50%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .page-header::before {
-    right: -70px;
   }
 }

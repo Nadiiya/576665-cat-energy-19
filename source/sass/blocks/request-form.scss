@@ -140,7 +140,7 @@
   }
 
   .request-form__footnote {
-    width: calc(50% - 40px);
+    width: calc(50% - 30px);
     font-size: 16px;
   }
 }
@@ -155,8 +155,8 @@
 
     &--line::before {
       top: 45px;
-      width: calc(100% + 80px);
-      margin-left: -40px;
+      margin-left: calc(-1 * (100vw - 1220px) / 2);
+      width: 100vw;
     }
   }
 
@@ -167,12 +167,5 @@
   .request-form__submit {
     margin: 0;
     width: 568px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .request-form__field-wrapper::before {
-    width: 1400px;
-    margin-left: -110px;
   }
 }
