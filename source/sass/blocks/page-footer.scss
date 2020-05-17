@@ -71,6 +71,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: transparent;
+  }
+
   .page-footer__wrapper {
     padding: 0;
     width: 100%;
