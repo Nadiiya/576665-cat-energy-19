@@ -8,10 +8,6 @@
 
 .main-banner__wrapper {
   color: rgb(255, 255, 255);
-  background: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: top;
   padding: 25px 20px 20px;
   text-align: center;
   width: 100%;
@@ -20,9 +16,25 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: $button-bg;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -71,6 +83,10 @@
     width: 450px;
     z-index: 10;
     align-items: flex-start;
+
+    &::after {
+      display: none;
+    }
   }
 
   .main-banner__title {
