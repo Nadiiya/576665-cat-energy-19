@@ -1,3 +1,7 @@
+.catalog__additional {
+  @include mobile-padding;
+}
+
 .catalog__title {
   @include mobile-padding;
   @include section-title;
@@ -9,13 +13,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
+  .catalog__food {
+    @include tablet-padding;
+  }
+
+  .catalog__additional {
     @include tablet-padding;
   }
 
   .catalog__title {
     margin: 0;
-    padding: 10px 0;
+
+    @include tablet-padding;
+    padding-top: 10px;
+    padding-bottom: 10px;
     min-height: 115px;
     border-bottom: none;
     font-size: 60px;
@@ -24,10 +35,16 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    @include block-centered;
+    padding: 0;
   }
 
   .catalog__title {
+    @include block-centered;
     min-height: 110px;
+  }
+
+  .catalog__food,
+  .catalog__additional {
+    @include block-centered;
   }
 }

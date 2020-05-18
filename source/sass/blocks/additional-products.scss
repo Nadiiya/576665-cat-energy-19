@@ -1,5 +1,4 @@
 .additional-products {
-  @include mobile-padding;
   position: relative;
 
   &::before {
@@ -71,8 +70,6 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    padding: 0;
-
     &::before {
       top: 20px;
       width: calc(100% + 60px);
@@ -84,8 +81,8 @@
     font-size: 36px;
     line-height: 1;
     padding-top: 0;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 0;
     border-bottom: none;
     margin-left: 0;
@@ -96,11 +93,11 @@
     min-height: 200px;
     padding-left: 60%;
     padding-right: 125px;
-    padding-top: 10px;
+    padding-top: 75px;
     padding-bottom: 10px;
     text-align: left;
     margin-bottom: 80px;
-    align-items: center;
+    align-items: flex-start;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

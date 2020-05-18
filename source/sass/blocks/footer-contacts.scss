@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.footer-contacts__wrapper {
+  display: flex;
+}
+
 .footer-contacts__map {
   height: 365px;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -37,25 +41,25 @@
 
 @media (min-width: $desktop-width) {
   .footer-contacts {
-    position: relative;
-  }
-
-  .footer-contacts__map {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top: 0;
-    left: 0;
+    display: flex;
   }
 
   .footer-contacts__wrapper {
-    @include block-centered;
+    padding: 0 40px;
+    width: 1300px;
+    margin: 0 auto;
     min-height: 400px;
     display: flex;
     align-items: center;
   }
 
   .footer-contacts__map {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

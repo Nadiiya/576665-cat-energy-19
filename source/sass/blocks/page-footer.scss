@@ -1,5 +1,7 @@
 .page-footer {
   background-color: $secondary-bg;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__wrapper {
@@ -59,14 +61,14 @@
   }
 
   .page-footer__social {
-    //width: calc(33% - 50px);
     padding: 0;
     border-bottom: none;
+    min-height: auto;
   }
 
   .page-footer__copyright {
-    //width: calc(33% - 50px);
     justify-content: flex-end;
+    min-height: auto;
   }
 }
 

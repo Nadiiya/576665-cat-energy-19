@@ -43,8 +43,11 @@
 
 @media (min-width: $desktop-width) {
   .form-page {
-    @include block-centered;
     padding-top: 25px;
+  }
+
+  .form-page__title-section {
+    @include block-centered;
   }
 
   .form-page__title {
@@ -55,5 +58,9 @@
     padding: 0;
     width: 340px;
     margin-bottom: 65px;
+  }
+
+  .form-page__form {
+    @include block-centered;
   }
 }
