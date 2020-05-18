@@ -39,16 +39,15 @@
     background-color: #ffffff;
     position: absolute;
   }
+}
 
-  &:hover::before,
-  &:focus::before {
-    border: 1px solid rgb(186, 186, 186);
-  }
+.choosing-program__input:hover + .choosing-program__label::before,
+.choosing-program__input:focus + .choosing-program__label::before {
+  border: 1px solid rgb(186, 186, 186);
+}
 
-  &:active,
-  &:active::before {
-    opacity: 0.3;
-  }
+.choosing-program__input:active + .choosing-program__label {
+  opacity: 0.3;
 }
 
 .choosing-program__input:checked + .choosing-program__label::after {
@@ -95,7 +94,7 @@
     width: 18px;
     height: 18px;
     top: 11px;
-    left: -49px;
+    left: -48px;
   }
 }
 

@@ -24,25 +24,24 @@
   cursor: pointer;
   user-select: none;
 
-  &:hover::before,
-  &:focus::before {
-    border: 1px solid rgb(186, 186, 186);
-  }
-
-  &:active,
-  &:active::before {
-    opacity: 0.3;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -45px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-color;
   }
 }
 
-.additional-order__label::before {
-  position: absolute;
-  top: 0;
-  left: -45px;
-  content: "";
-  width: 30px;
-  height: 30px;
-  border: 1px solid $border-color;
+.additional-order__input:hover + .additional-order__label::before,
+.additional-order__input:focus + .additional-order__label::before {
+  border: 1px solid rgb(186, 186, 186);
+}
+
+.additional-order__input:active + .additional-order__label {
+  opacity: 0.3;
 }
 
 .additional-order__input:checked + .additional-order__label::after {
