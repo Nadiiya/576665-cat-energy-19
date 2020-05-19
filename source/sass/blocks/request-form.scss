@@ -147,7 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .request-form {
-    padding-bottom: 80px;
+    padding-bottom: 83px;
   }
 
   .request-form__field-wrapper {
@@ -167,5 +167,9 @@
   .request-form__submit {
     margin: 0;
     width: 568px;
+  }
+
+  .request-form__footnote {
+    width: calc(50% - 40px);
   }
 }

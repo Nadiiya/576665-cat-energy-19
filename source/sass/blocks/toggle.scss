@@ -56,13 +56,14 @@
   }
 
   .toggle__button {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     font-size: 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
 
     &:hover,
     &:focus {
       padding-bottom: 4px;
-      border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     }
 
     &:active {
