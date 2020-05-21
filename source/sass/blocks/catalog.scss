@@ -1,3 +1,7 @@
+.catalog {
+  overflow-x: hidden;
+}
+
 .catalog__additional {
   @include mobile-padding;
 }

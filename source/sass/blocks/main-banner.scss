@@ -68,9 +68,10 @@
 @media (min-width: $tablet-width) {
   .main-banner {
     @include tablet-padding;
-    align-items: start;
+    align-items: flex-start;
     padding-left: 120px;
     min-height: 840px;
+    overflow-x: hidden;
   }
 
   .main-banner__wrapper {
@@ -123,6 +124,7 @@
   .main-banner {
     @include block-centered;
     min-height: 535px;
+    overflow-x: visible;
   }
 
   .main-banner__wrapper {
